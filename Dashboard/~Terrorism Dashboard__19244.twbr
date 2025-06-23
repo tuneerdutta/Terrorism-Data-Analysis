@@ -1,0 +1,2084 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <ExternalImageContentForZones />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (GlobalTerrorismDataset Updated)' inline='true' name='federated.1bmx9bo05p3bu715islfo16fbnpu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='GlobalTerrorismDataset Updated' name='excel-direct.0j00bud1taeiuk1gkiqe20fjig6z'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/ImpDocs/Documents for Masai/Power_BI/Assinment_8/GlobalTerrorismDataset Updated.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0j00bud1taeiuk1gkiqe20fjig6z' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:J10001:no:A1:J10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Region' ordinal='2' />
+            <column datatype='integer' name='Success Rate' ordinal='3' />
+            <column datatype='string' name='Type of Attack' ordinal='4' />
+            <column datatype='string' name='Target Type' ordinal='5' />
+            <column datatype='string' name='Target&apos;s Nationality' ordinal='6' />
+            <column datatype='string' name='Name of Group' ordinal='7' />
+            <column datatype='string' name='Weapon Type' ordinal='8' />
+            <column datatype='string' name='Is Success' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J10001:no:A1:J10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Success Rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Success Rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Success Rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of Attack</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type of Attack]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Type of Attack</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Target Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Target Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target&apos;s Nationality</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Target&apos;s Nationality]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Target&apos;s Nationality</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name of Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name of Group]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Name of Group</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weapon Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Weapon Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Weapon Type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Success</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Is Success]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Is Success</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]&quot;' value='Total No of Attacks' />
+          <alias key='&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[sum:Success Rate:qk]&quot;' value='Total Successful Attacks' />
+          <alias key='&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[usr:Calculation_1298444090236907520:qk]&quot;' value='Total Unsuccessfull Attacks' />
+        </aliases>
+      </column>
+      <column caption='Total Unsucessfull Attacks' datatype='integer' name='[Calculation_1298444090236907520]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF [Success Rate]=0 THEN [Success Rate] END)' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Success Rate]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Target Type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Type of Attack]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Weapon Type]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]' role='measure' type='quantitative' />
+      <column-instance column='[Type of Attack]' derivation='Count' name='[cnt:Type of Attack:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Type of Attack]' derivation='None' name='[none:Type of Attack:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Weapon Type]' derivation='None' name='[none:Weapon Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Success Rate]' derivation='Sum' name='[sum:Success Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1298444090236907520]' derivation='User' name='[usr:Calculation_1298444090236907520:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Target Type)' hidden='true' name='[Action (Target Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Target Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Weapon Type)' hidden='true' name='[Action (Weapon Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Weapon Type]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/TUNEER~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0s7f1nb1dcac4p17zxayh147bwyd.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/19/2025 10:31:14 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>343</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Success Rate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Success Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Success Rate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of Attack</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of Attack]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type of Attack</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Target Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Target Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Target Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Target&apos;s Nationality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Target&apos;s Nationality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Target&apos;s Nationality</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>315</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name of Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name of Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name of Group</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2221</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weapon Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weapon Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weapon Type</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Is Success</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Is Success]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Is Success</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Type of Attack:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Armed Assault&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hijacking&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Facility/Infrastructure Attack&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hostage Taking (Kidnapping)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bombing/Explosion&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Hostage Taking (Barricade Incident)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Assassination&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Unarmed Assault&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Weapon Type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Radiological&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Biological&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Firearms&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sabotage Equipment&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Incendiary&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Chemical&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Melee&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Explosives&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Vehicle (not to include vehicle-borne explosives, i.e., car or truck bombs)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Fake Weapons&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[sum:Success Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[usr:Calculation_1298444090236907520:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_53FB61BA37BE4FC3ADE60271D080E4C4'>
+            <properties context=''>
+              <relation connection='excel-direct.0j00bud1taeiuk1gkiqe20fjig6z' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:J10001:no:A1:J10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='string' name='Region' ordinal='2' />
+                  <column datatype='integer' name='Success Rate' ordinal='3' />
+                  <column datatype='string' name='Type of Attack' ordinal='4' />
+                  <column datatype='string' name='Target Type' ordinal='5' />
+                  <column datatype='string' name='Target&apos;s Nationality' ordinal='6' />
+                  <column datatype='string' name='Name of Group' ordinal='7' />
+                  <column datatype='string' name='Weapon Type' ordinal='8' />
+                  <column datatype='string' name='Is Success' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_6A50143C44F542A9B327103F152413F0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Main Dashboard' type='sheet' worksheet='Attacks as per Weapon Types' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Main Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_EFFA9C04BFF444EB970CDAC977D585E8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Main Dashboard' type='sheet' worksheet='Attacks as per Target Types' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Main Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Attacks as per Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Attacks  as per Country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (GlobalTerrorismDataset Updated)' name='federated.1bmx9bo05p3bu715islfo16fbnpu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1bmx9bo05p3bu715islfo16fbnpu'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Is Success]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Target Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of Attack]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weapon Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Type of Attack]' derivation='Count' name='[cnt:Type of Attack:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Is Success]' derivation='None' name='[none:Is Success:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]'>
+            <groupfilter function='member' level='[Target Type]' member='&quot;Military&quot;' user:ui-action-filter='[Action2_EFFA9C04BFF444EB970CDAC977D585E8]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]'>
+            <groupfilter function='level-members' level='[Weapon Type]' user:ui-action-filter='[Action1_6A50143C44F542A9B327103F152413F0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Is Success:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Australasia &amp; Oceania&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central America &amp; Caribbean&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;East Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Eastern Europe&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Middle East &amp; North Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;North America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Southeast Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Sub-Saharan Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Western Europe&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>1970</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <encoding attr='space' class='0' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Longitude (generated)]' field-type='quantitative' max='5621974.2126469612' min='-18297911.972850867' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Latitude (generated)]' field-type='quantitative' max='10557858.724964768' min='-4962353.2627425725' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='background-color' data-class='subtotal' value='#2a2e3f' />
+            <format attr='background-color' data-class='total' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1e2232' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#2a2e3f' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='11' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]' />
+              <lod column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5932043790817261' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#007bff' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-transparency' value='216' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Latitude (generated)]</rows>
+        <cols>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{10BB0B89-DDDF-48E6-8A64-E49056836F53}' />
+    </worksheet>
+    <worksheet name='Attacks as per Target Types'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Attacks as per Target Types</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (GlobalTerrorismDataset Updated)' name='federated.1bmx9bo05p3bu715islfo16fbnpu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bmx9bo05p3bu715islfo16fbnpu'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Is Success]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Target Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weapon Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Target Type]' derivation='Count' name='[cnt:Target Type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Is Success]' derivation='None' name='[none:Is Success:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target Type]' derivation='None' name='[none:Target Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]'>
+            <groupfilter function='level-members' level='[Weapon Type]' user:ui-action-filter='[Action1_6A50143C44F542A9B327103F152413F0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Is Success:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Australasia &amp; Oceania&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central America &amp; Caribbean&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;East Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Eastern Europe&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Middle East &amp; North Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;North America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Southeast Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Sub-Saharan Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Western Europe&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>1970</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='background-color' data-class='subtotal' value='#2a2e3f' />
+            <format attr='background-color' data-class='total' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1e2232' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#2a2e3f' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Target Type:qk]' />
+              <color column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Target Type:qk]' />
+              <text column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Target Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='11' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{248416B0-DBA4-4BA3-AAE3-2217B1998347}' />
+    </worksheet>
+    <worksheet name='Attacks as per Weapon Types'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Attacks as per Weapons</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (GlobalTerrorismDataset Updated)' name='federated.1bmx9bo05p3bu715islfo16fbnpu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bmx9bo05p3bu715islfo16fbnpu'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Is Success]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Target Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of Attack]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weapon Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Type of Attack]' derivation='Count' name='[cnt:Type of Attack:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Is Success]' derivation='None' name='[none:Is Success:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weapon Type]' derivation='None' name='[none:Weapon Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]'>
+            <groupfilter function='member' level='[Target Type]' member='&quot;Military&quot;' user:ui-action-filter='[Action2_EFFA9C04BFF444EB970CDAC977D585E8]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Is Success:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Australasia &amp; Oceania&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central America &amp; Caribbean&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;East Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Eastern Europe&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Middle East &amp; North Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;North America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Southeast Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Sub-Saharan Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Western Europe&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>1970</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' value='301' />
+            <format attr='width' value='395' />
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='background-color' data-class='subtotal' value='#2a2e3f' />
+            <format attr='background-color' data-class='total' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1e2232' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#2a2e3f' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Weapon Type:nk]' id='legend-color' value='center' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Weapon Type:nk]' />
+              <size column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]' />
+              <text column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1094474792480469' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{239A5B43-97A9-4026-99D0-BDCE1EF02E4F}' />
+    </worksheet>
+    <worksheet name='Countries with Attacks'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Top 10 Countries With Highest Attckes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (GlobalTerrorismDataset Updated)' name='federated.1bmx9bo05p3bu715islfo16fbnpu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bmx9bo05p3bu715islfo16fbnpu'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Is Success]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Target Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of Attack]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weapon Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Type of Attack]' derivation='Count' name='[cnt:Type of Attack:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Is Success]' derivation='None' name='[none:Is Success:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type of Attack]' derivation='None' name='[none:Type of Attack:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]'>
+            <groupfilter function='member' level='[Target Type]' member='&quot;Military&quot;' user:ui-action-filter='[Action2_EFFA9C04BFF444EB970CDAC977D585E8]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]'>
+            <groupfilter function='level-members' level='[Weapon Type]' user:ui-action-filter='[Action1_6A50143C44F542A9B327103F152413F0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Type of Attack])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Is Success:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Australasia &amp; Oceania&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central America &amp; Caribbean&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;East Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Eastern Europe&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Middle East &amp; North Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;North America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Southeast Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Sub-Saharan Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Western Europe&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>1970</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]' scope='rows' value='' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='background-color' data-class='subtotal' value='#2a2e3f' />
+            <format attr='background-color' data-class='total' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1e2232' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#2a2e3f' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Type of Attack:nk]' value='102' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Type of Attack:nk]' id='legend-color' value='#2a2e3f' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Type of Attack:nk]' id='legend-color' value='left' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Type of Attack:nk]' />
+              <text column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]' />
+              <lod column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Type of Attack:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]</rows>
+        <cols>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]</cols>
+      </table>
+      <simple-id uuid='{5B48865C-56AB-416B-8C60-E14DA9DDFD28}' />
+    </worksheet>
+    <worksheet name='Total Attacks'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Weapon Type as per Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (GlobalTerrorismDataset Updated)' name='federated.1bmx9bo05p3bu715islfo16fbnpu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bmx9bo05p3bu715islfo16fbnpu'>
+            <column caption='Total Unsucessfull Attacks' datatype='integer' name='[Calculation_1298444090236907520]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF [Success Rate]=0 THEN [Success Rate] END)' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Is Success]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Success Rate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Target Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of Attack]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weapon Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Type of Attack]' derivation='Count' name='[cnt:Type of Attack:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Is Success]' derivation='None' name='[none:Is Success:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Success Rate]' derivation='Sum' name='[sum:Success Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1298444090236907520]' derivation='User' name='[usr:Calculation_1298444090236907520:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[sum:Success Rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[usr:Calculation_1298444090236907520:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1bmx9bo05p3bu715islfo16fbnpu].[sum:Success Rate:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]'>
+            <groupfilter function='member' level='[Target Type]' member='&quot;Military&quot;' user:ui-action-filter='[Action2_EFFA9C04BFF444EB970CDAC977D585E8]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]'>
+            <groupfilter function='level-members' level='[Weapon Type]' user:ui-action-filter='[Action1_6A50143C44F542A9B327103F152413F0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Is Success:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Australasia &amp; Oceania&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central America &amp; Caribbean&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;East Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Eastern Europe&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Middle East &amp; North Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;North America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Southeast Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Sub-Saharan Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Western Europe&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>1970</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-weight' value='bold' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='font-size' value='22' />
+            <format attr='wrap' value='off' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='text-align' data-class='subtotal' scope='rows' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' value='14' />
+            <format attr='vertical-align' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' value='bottom' />
+            <format attr='text-orientation' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' value='0' />
+            <format attr='text-align' value='right' />
+            <format attr='text-align' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='background-color' data-class='subtotal' value='#2a2e3f' />
+            <format attr='background-color' data-class='total' value='#2a2e3f' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1e2232' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#2a2e3f' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' value='Attacks'>
+              <formatted-text>
+                <run fontalignment='0' fontsize='12'>Attacks</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' value='Region'>
+              <formatted-text>
+                <run fontalignment='0' fontsize='12'>Region</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' value='Country'>
+              <formatted-text>
+                <run fontalignment='0' fontsize='12'>Country</run>
+              </formatted-text>
+            </format>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='14' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-size' value='9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{3B6DAE37-254D-4495-A749-F04DE03BDDEE}' />
+    </worksheet>
+    <worksheet name='Year Wise Successful &amp; Unsuccessful Attacks'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Year Wise Successful &amp; Unsuccessful Attacks</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (GlobalTerrorismDataset Updated)' name='federated.1bmx9bo05p3bu715islfo16fbnpu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bmx9bo05p3bu715islfo16fbnpu'>
+            <column caption='Total Unsucessfull Attacks' datatype='integer' name='[Calculation_1298444090236907520]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF [Success Rate]=0 THEN [Success Rate] END)' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Is Success]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Success Rate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Target Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weapon Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Is Success]' derivation='None' name='[none:Is Success:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Success Rate]' derivation='Sum' name='[sum:Success Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1298444090236907520]' derivation='User' name='[usr:Calculation_1298444090236907520:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]'>
+            <groupfilter function='member' level='[Target Type]' member='&quot;Military&quot;' user:ui-action-filter='[Action2_EFFA9C04BFF444EB970CDAC977D585E8]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]'>
+            <groupfilter function='level-members' level='[Weapon Type]' user:ui-action-filter='[Action1_6A50143C44F542A9B327103F152413F0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Is Success:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Australasia &amp; Oceania&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central America &amp; Caribbean&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;East Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Eastern Europe&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Middle East &amp; North Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;North America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Southeast Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Sub-Saharan Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Western Europe&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Weapon Type)]</column>
+            <column>[federated.1bmx9bo05p3bu715islfo16fbnpu].[Action (Target Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1bmx9bo05p3bu715islfo16fbnpu].[sum:Success Rate:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='background-color' data-class='subtotal' value='#2a2e3f' />
+            <format attr='background-color' data-class='total' value='#2a2e3f' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1e2232' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#2a2e3f' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#2a2e3f' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' />
+              <text column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[usr:Calculation_1298444090236907520:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1bmx9bo05p3bu715islfo16fbnpu].[usr:Calculation_1298444090236907520:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' />
+              <text column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[usr:Calculation_1298444090236907520:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1bmx9bo05p3bu715islfo16fbnpu].[sum:Success Rate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' />
+              <text column='[federated.1bmx9bo05p3bu715islfo16fbnpu].[usr:Calculation_1298444090236907520:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1bmx9bo05p3bu715islfo16fbnpu].[usr:Calculation_1298444090236907520:qk] + [federated.1bmx9bo05p3bu715islfo16fbnpu].[sum:Success Rate:qk])</rows>
+        <cols>[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{7F42EE6B-FD75-49B9-B03D-E52C100207F9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Main Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='20'>Æ              </run>
+            <run bold='true' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='24'>Terrorism Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#1e2232' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#2a2e3f' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_5' value='center' />
+          <format attr='vertical-align' id='dash-text_5' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='1080' maxwidth='1920' minheight='1080' minwidth='1700' sizing-mode='range' />
+      <datasources>
+        <datasource caption='Sheet1 (GlobalTerrorismDataset Updated)' name='federated.1bmx9bo05p3bu715islfo16fbnpu' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1bmx9bo05p3bu715islfo16fbnpu'>
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='string' name='[Is Success]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Is Success]' derivation='None' name='[none:Is Success:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='37593' id='3' name='Attacks as per Country' w='29529' x='412' y='56759' />
+        <zone h='34167' id='11' name='Countries with Attacks' w='44824' x='412' y='17963' />
+        <zone h='4259' id='14' leg-item-layout='horz' name='Countries with Attacks' pane-specification-id='0' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Type of Attack:nk]' type-v2='color' w='44882' x='353' y='51944' />
+        <zone h='47870' id='15' name='Attacks as per Weapon Types' w='24176' x='45588' y='8333' />
+        <zone h='8333' id='18' leg-item-layout='grid' leg-item-order='normal' name='Attacks as per Weapon Types' pane-specification-id='0' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Weapon Type:nk]' show-title='false' type-v2='color' w='22824' x='46235' y='47130' />
+        <zone h='48056' id='19' name='Attacks as per Target Types' w='29471' x='70059' y='8241' />
+        <zone fixed-size='81' h='7037' id='9' is-fixed='true' type-v2='title' w='99235' x='353' y='556' />
+        <zone h='37870' id='22' name='Year Wise Successful &amp; Unsuccessful Attacks' w='69294' x='30176' y='56667' />
+        <zone h='3704' id='27' leg-item-layout='horz' name='Year Wise Successful &amp; Unsuccessful Attacks' pane-specification-id='1' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' type-v2='color' w='14824' x='84529' y='56759' />
+        <zone h='6759' id='29' name='Attacks as per Country' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='14882' x='25706' y='556' />
+        <zone h='9630' id='30' name='Total Attacks' show-title='false' w='44941' x='353' y='7963' />
+        <zone h='6019' id='31' mode='checkdropdown' name='Total Attacks' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' show-apply='true' type-v2='filter' w='13118' x='86176' y='1111' />
+        <zone h='6204' id='32' mode='checkdropdown' name='Total Attacks' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' show-apply='true' show-morefewerbutton='true' type-v2='filter' values='relevant' w='17588' x='66765' y='1019' />
+        <zone h='6204' id='33' mode='checkdropdown' name='Total Attacks' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' show-apply='true' show-morefewerbutton='true' type-v2='filter' values='relevant' w='20941' x='43471' y='926' />
+        <zone h='6944' id='36' image-file-url='https://i.ibb.co/CK70FgSZ/terrorist.png' is-centered='0' is-scaled='1' type-v2='bitmap' w='4588' x='353' y='556' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='20'>Æ              </run>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='24'>Terrorism Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2150' minheight='2150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98518' id='41' param='vert' type-v2='layout-flow' w='99058' x='471' y='741'>
+                <zone fixed-size='81' h='7037' id='9' type-v2='title' w='99235' x='353' y='556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='75' h='6944' id='36' image-file-url='https://i.ibb.co/CK70FgSZ/terrorist.png' is-centered='0' is-fixed='true' is-scaled='1' type-v2='bitmap' w='4588' x='353' y='556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6019' id='31' mode='checkdropdown' name='Total Attacks' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' show-apply='true' type-v2='filter' w='13118' x='86176' y='1111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6204' id='32' mode='checkdropdown' name='Total Attacks' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' show-apply='true' show-morefewerbutton='true' type-v2='filter' values='relevant' w='17588' x='66765' y='1019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6204' id='33' mode='checkdropdown' name='Total Attacks' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' show-apply='true' show-morefewerbutton='true' type-v2='filter' values='relevant' w='20941' x='43471' y='926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='104' h='9630' id='30' is-fixed='true' name='Total Attacks' show-title='false' w='44941' x='353' y='7963'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48056' id='19' is-fixed='true' name='Attacks as per Target Types' w='29471' x='70059' y='8241'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47870' id='15' is-fixed='true' name='Attacks as per Weapon Types' w='24176' x='45588' y='8333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8333' id='18' leg-item-layout='grid' leg-item-order='normal' name='Attacks as per Weapon Types' pane-specification-id='0' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Weapon Type:nk]' show-title='false' type-v2='color' w='22824' x='46235' y='47130'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='34167' id='11' is-fixed='true' name='Countries with Attacks' w='44824' x='412' y='17963'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4259' id='14' leg-item-layout='horz' name='Countries with Attacks' pane-specification-id='0' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Type of Attack:nk]' type-v2='color' w='44882' x='353' y='51944'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37870' id='22' is-fixed='true' name='Year Wise Successful &amp; Unsuccessful Attacks' w='69294' x='30176' y='56667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3704' id='27' leg-item-layout='horz' name='Year Wise Successful &amp; Unsuccessful Attacks' pane-specification-id='1' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' type-v2='color' w='14824' x='84529' y='56759'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6759' id='29' name='Attacks as per Country' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='14882' x='25706' y='556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37593' id='3' is-fixed='true' name='Attacks as per Country' w='29529' x='412' y='56759'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{90F31D9A-432A-414E-B8BE-8C7C6AA64570}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Attacks'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Is Success:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Region:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Country:nk]' type='filter' />
+            <card param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1AA50FDC-B951-4D4D-BFB2-442B1C160210}' />
+    </window>
+    <window class='worksheet' name='Attacks as per Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{77DBDF3F-952D-4061-A129-1D8D530AC919}' />
+    </window>
+    <window class='worksheet' name='Attacks as per Weapon Types'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Weapon Type:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Type of Attack:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4D5371B8-7FD5-4503-A653-3B46A9D4F8DE}' />
+    </window>
+    <window class='worksheet' name='Attacks as per Target Types'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[cnt:Target Type:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{56955819-6632-48BB-8148-FE37191E1BD0}' />
+    </window>
+    <window class='worksheet' name='Countries with Attacks'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[none:Type of Attack:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1AAAF77A-F0DC-4EDE-83E5-DA378573D68C}' />
+    </window>
+    <window class='worksheet' name='Year Wise Successful &amp; Unsuccessful Attacks'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1bmx9bo05p3bu715islfo16fbnpu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{662D9B08-D422-4721-A137-18496F88FFCE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Main Dashboard'>
+      <viewpoints>
+        <viewpoint name='Attacks as per Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Attacks as per Target Types'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Attacks as per Weapon Types'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Countries with Attacks'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Attacks'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Year Wise Successful &amp; Unsuccessful Attacks'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{7E61F19B-D607-44C9-A493-D57F3381E0A3}' />
+    </window>
+  </windows>
+</workbook>
